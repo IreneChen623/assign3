@@ -30,7 +30,7 @@ int gameState;
 
 final int array_1 = 1;
 final int array_2 = 2;
-final int array_3 = 0;
+final int array_3 = 3;
 int enemyState;
 
 void setup () 
@@ -138,7 +138,6 @@ void draw ()
       translate(t,0);
       t+=5;
       
-      enemyState = enemyState % 3 ;
       
       switch(enemyState){
                
@@ -150,7 +149,7 @@ void draw ()
         
         if(t>=width){
           t=0;
-          enemyState++;
+          enemyState=2;
         }
         
         break;
@@ -162,7 +161,7 @@ void draw ()
 
         if(t>=width){
           t=0;
-          enemyState++;
+          enemyState=3;
         }
 
         break;
@@ -182,7 +181,7 @@ void draw ()
 
         if(t>=width){
           t=0;
-          enemyState++;
+          enemyState=1;
         }
         break;
 
